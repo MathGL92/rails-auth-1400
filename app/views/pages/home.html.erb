@@ -2,7 +2,7 @@
 <p>Find me in app/views/pages/home.html.erb</p>
 
 <% if user_signed_in? %>
-  <p>Welcome dear user!</p>
+  <p>Welcome <%= current_user.email %>, we hope you have a great day!</p>
 <% else %>
   <p>Don't forget to create your account!</p>
 <% end %>
